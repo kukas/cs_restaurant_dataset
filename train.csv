@@ -89,7 +89,7 @@ goodbye(),goodbye(),Rádo se stalo . Na shledanou .,Rádo se stalo . Na shledano
 "inform(food=Asian,good_for_meal=lunch,name=Ananta)","inform(food=X-food,good_for_meal=X-good_for_meal,name=X-name)","Nabízí se restaurace Ananta , dobré místo na oběd , kde podávají asijská jídla .","Nabízí se restaurace X-name , dobré místo na X-good_for_meal , kde podávají X-food jídla ."
 ?request(near),?request(near),Poblíž čeho to je ?,Poblíž čeho to je ?
 "inform(name=BarBar,type=restaurant)","inform(name=X-name,type=restaurant)",Mám tu restauraci BarBar .,Mám tu restauraci X-name .
-"inform(kids_allowed=yes,name='Švejk Restaurant')","inform(kids_allowed=yes,name=X-name)",Restaurace Švejk je vegetariánská a vaří i pro děti .,X-name je vegetariánská a vaří i pro děti .
+"inform(food=vegetarian,kids_allowed=yes,name='Švejk Restaurant')","inform(food=X-food,kids_allowed=yes,name=X-name)",Restaurace Švejk je vegetariánská a vaří i pro děti .,X-name je X-food a vaří i pro děti .
 "inform(name='Baráčnická rychta',postcode='159 00')","inform(name=X-name,postcode=X-postcode)",Baráčnická rychta má poštovní směrovací číslo 159 00 .,X-name má poštovní směrovací číslo X-postcode .
 "inform(name='Švejk Restaurant',postcode='143 00')","inform(name=X-name,postcode=X-postcode)",Restaurace Švejk má poštovní směrovací číslo 143 00 .,X-name má poštovní směrovací číslo X-postcode .
 "inform(address='Karmelitská 42',name='Švejk Restaurant',phone=265745239,postcode='167 00')","inform(address=X-address,name=X-name,phone=X-phone,postcode=X-postcode)","Adresa restaurace Švejk je Karmelitská 42 , telefonní číslo je 265745239 a poštovní směrovací číslo je 167 00 .","Adresa X-name je X-address , telefonní číslo je X-phone a poštovní směrovací číslo je X-postcode ."
@@ -232,7 +232,7 @@ goodbye(),goodbye(),Na shledanou a hezký den .,Na shledanou a hezký den .
 goodbye(),goodbye(),"Na shledanou , přeji krásný den .","Na shledanou , přeji krásný den ."
 goodbye(),goodbye(),Děkuji a přeji krásný den .,Děkuji a přeji krásný den .
 "inform(name='Švejk Restaurant',type=restaurant)","inform(name=X-name,type=restaurant)",Mám tady hezkou restauraci Švejk .,Mám tady hezkou X-name .
-inform_no_match(area=Hradčany),inform_no_match(area=X-area),"Nevím o žádné restauraci na Hradčanech , která by servírovala francouzskou kuchyni .","Nevím o žádné restauraci na X-area , která by servírovala francouzskou kuchyni ."
+"inform_no_match(area=Hradčany,food=French)","inform_no_match(area=X-area,food=X-food)","Nevím o žádné restauraci na Hradčanech , která by servírovala francouzskou kuchyni .","Nevím o žádné restauraci na X-area , která by servírovala X-food kuchyni ."
 "inform(address='Štefánikova 49',name='Švejk Restaurant')","inform(address=X-address,name=X-name)",Švejk Restaurant má adresu Štefánikova 49 .,X-name má adresu X-address .
 "inform(name='Café Savoy',type=restaurant)","inform(name=X-name,type=restaurant)",Název tohoto podniku je Café Savoy a je to příjemná restaurace,Název tohoto podniku je X-name a je to příjemná restaurace
 goodbye(),goodbye(),Děkuji . Na shledanou .,Děkuji . Na shledanou .
@@ -264,7 +264,7 @@ goodbye(),goodbye(),Nemáte zač . Bylo mi potěšením .,Nemáte zač . Bylo mi
 "inform(name='Green Spirit',type=restaurant)","inform(name=X-name,type=restaurant)",Je tu restaurace jménem Green Spirit,Je tu restaurace jménem X-name
 goodbye(),goodbye(),Děkuji za zavolání . Na shledanou .,Děkuji za zavolání . Na shledanou .
 "inform(kids_allowed=yes,name='Café Savoy')","inform(kids_allowed=yes,name=X-name)",Restaurace Café Savoy je vhodná pro návštěvu s dětmi .,Restaurace X-name je vhodná pro návštěvu s dětmi .
-"inform(good_for_meal=dinner,kids_allowed=no,name='Švejk Restaurant',near='Old Town Square')","inform(good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name,near=X-near)",Restauraci Švejk najdeme poblíž Staroměstského náměstí . Je vhodná pro děti a dělají zde dobré večeře .,X-name najdeme poblíž X-near . Je vhodná pro děti a dělají zde dobré X-good_for_meal .
+"inform(good_for_meal=dinner,kids_allowed=yes,name='Švejk Restaurant',near='Old Town Square')","inform(good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name,near=X-near)",Restauraci Švejk najdeme poblíž Staroměstského náměstí . Je vhodná pro děti a dělají zde dobré večeře .,X-name najdeme poblíž X-near . Je vhodná pro děti a dělají zde dobré X-good_for_meal .
 "inform(name=BarBar,phone=254468770,price='between 50 and 100 Kč')","inform(name=X-name,phone=X-phone,price=X-price)",Ceny BarBaru se pohybují mezi 50 a 100 Kč . Telefonní číslo je 254468770 .,Ceny X-name se pohybují X-price . Telefonní číslo je X-phone .
 goodbye(),goodbye(),Nemáte zač . Bylo mi potěšením .,Nemáte zač . Bylo mi potěšením .
 "inform(name='U Tučňáků',type=restaurant)","inform(name=X-name,type=restaurant)",Restaurace U Tučňáků je pěkná .,Restaurace X-name je pěkná .
@@ -273,7 +273,7 @@ goodbye(),goodbye(),Nemáte zač . Bylo mi potěšením .,Nemáte zač . Bylo mi
 "inform(kids_allowed=yes,name='Baráčnická rychta')","inform(kids_allowed=yes,name=X-name)",Do Baráčnické rychty mohou i děti .,Do X-name mohou i děti .
 "inform(name='Café Savoy',type=restaurant)","inform(name=X-name,type=restaurant)",Jedna z místních restaurací je Kavárna Savoy .,Jedna z místních restaurací je X-name .
 goodbye(),goodbye(),Děkuji za zavolání . Děkuji .,Děkuji za zavolání . Děkuji .
-"inform(area=Smíchov,kids_allowed=no,name='Pivo & Basilico')","inform(area=X-area,kids_allowed=no,name=X-name)","Pivo & Basilico je příjemná restaurace na Smíchově , která je přístupná dětem .","X-name je příjemná restaurace na X-area , která je přístupná dětem ."
+"inform(area=Smíchov,kids_allowed=yes,name='Pivo & Basilico')","inform(area=X-area,kids_allowed=yes,name=X-name)","Pivo & Basilico je příjemná restaurace na Smíchově , která je přístupná dětem .","X-name je příjemná restaurace na X-area , která je přístupná dětem ."
 goodbye(),goodbye(),Na shledanou,Na shledanou
 "inform(count=239,good_for_meal=dont_care,type=restaurant)","inform(count=X-count,good_for_meal=dont_care,type=restaurant)","Mám tu 239 restaurací , které jsou skvělé na jakékoli jídlo .","Mám tu X-count restaurací , které jsou skvělé na jakékoli jídlo ."
 goodbye(),goodbye(),Děkuji a přeji dobrou chuť . Na shledanou .,Děkuji a přeji dobrou chuť . Na shledanou .
@@ -343,7 +343,7 @@ goodbye(),goodbye(),"Děkuji , přeji krásný den .","Děkuji , přeji krásný
 "inform(address='Malostranské náměstí 48',name='Green Spirit',price='70 Kč')","inform(address=X-address,name=X-name,price=X-price)",Restaurace Green Spirit se nachází na Malostranském náměstí 48 . Jídlo tu stojí 70 Kč .,Restaurace X-name se nachází na X-address . Jídlo tu stojí X-price .
 ?select(kids_allowed='yes or no'),?select(kids_allowed='yes or no'),Přijdete s dětmi ?,Přijdete s dětmi ?
 "inform(address='Štefánikova 36',name='Švejk Restaurant',postcode='147 00')","inform(address=X-address,name=X-name,postcode=X-postcode)","Adresa restaurace Švejk Restaurant je Štefánikova 36 , poštovní směrovací číslo 147 00 .","Adresa X-name Restaurant je X-address , poštovní směrovací číslo X-postcode ."
-"inform(area='Staré Město',name=Místo)","inform(area=X-area,name=X-name)",Místo leží v Starém městě .,X-name leží v X-area .
+"inform(area='Staré Město',name=Místo)","inform(area=X-area,name=X-name)",Místo leží ve Starém Městě .,X-name leží v X-area .
 "inform(name='Švejk Restaurant',type=restaurant)","inform(name=X-name,type=restaurant)",Restaurace Švejk je velmi příjemná restaurace .,X-name je velmi příjemná restaurace .
 "inform(food=vegetarian,name='Baráčnická rychta')","inform(food=X-food,name=X-name)",Baráčnická rychta je vegetariánská restaurace,X-name je X-food restaurace
 "inform(good_for_meal=lunch,kids_allowed=yes,name=Místo)","inform(good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name)",V restauraci Místo podávají obědy a je zde povolen vstup s dětmi .,V restauraci X-name podávají X-good_for_meal a je zde povolen vstup s dětmi .
@@ -409,7 +409,7 @@ goodbye(),goodbye(),Přeji příjemný den,Přeji příjemný den
 ?request(price_range),?request(price_range),"Můžu se zeptat , jakou cenovou kategorii hledáte ?","Můžu se zeptat , jakou cenovou kategorii hledáte ?"
 "inform(name='Café Savoy',type=restaurant)","inform(name=X-name,type=restaurant)",Café Savoy je příjemná restaurace .,X-name je příjemná restaurace .
 ?confirm(food=Asian),?confirm(food=X-food),"Přejete si asijskou restauraci , viďte ?","Přejete si X-food restauraci , viďte ?"
-"inform(area='Staré Město',name=Ananta)","inform(area=X-area,name=X-name)",Restaurace Ananta se nachází na Starém městě .,Restaurace X-name se nachází na X-area .
+"inform(area='Staré Město',name=Ananta)","inform(area=X-area,name=X-name)",Restaurace Ananta se nachází na Starém Městě .,Restaurace X-name se nachází na X-area .
 goodbye(),goodbye(),Na shledanou,Na shledanou
 "inform(address='Tržiště 32',name=Ananta)","inform(address=X-address,name=X-name)",Ananta je na Tržišti 32 .,X-name je na X-address .
 ?request(price_range),?request(price_range),Jak drahou restauraci hledáte ?,Jak drahou restauraci hledáte ?
@@ -540,7 +540,7 @@ goodbye(),goodbye(),Dobrý den,Dobrý den
 "inform(name='Pivo & Basilico',phone=248158496,postcode='140 00')","inform(name=X-name,phone=X-phone,postcode=X-postcode)",Telefonní číslo do restaurace Pivo & Basilico je 248158496 a poštovní směrovací číslo je 140 00 .,Telefonní číslo do restaurace X-name je X-phone a poštovní směrovací číslo je X-postcode .
 "inform(name='Café Kampus',near='Powder Tower',price_range=expensive)","inform(name=X-name,near=X-near,price_range=X-price_range)",Café Kampus najdete poblíž Prašné brány a ceny má dražší .,X-name najdete poblíž X-near a ceny má X-price_range .
 "inform(count=3,good_for_meal=dinner,near='Petřín Tower',type=restaurant)","inform(count=X-count,good_for_meal=X-good_for_meal,near=X-near,type=restaurant)",Blízko Petřínské rozhledny se nachází 3 restaurace vhodné na večeři .,Blízko X-near se nachází X-count restaurace vhodné na X-good_for_meal .
-inform_no_match(area='Staré Město'),inform_no_match(area=X-area),Na Starém městě nejsou žádné takové restaurace .,Na X-area nejsou žádné takové restaurace .
+inform_no_match(area='Staré Město'),inform_no_match(area=X-area),Na Starém Městě nejsou žádné takové restaurace .,Na X-area nejsou žádné takové restaurace .
 inform_no_match(area=Nusle),inform_no_match(area=X-area),Nemám tu blízko Nuslí žádnou restauraci .,Nemám tu blízko X-area žádnou restauraci .
 "inform(address='Kaprova 49',area=Žižkov,name='U Tučňáků')","inform(address=X-address,area=X-area,name=X-name)",Restaurace U Tučňáků leží na Žižkově na Kaprově 49 .,Restaurace X-name leží na X-area na X-address .
 "inform(name='Kočár z Vídně',type=restaurant)","inform(name=X-name,type=restaurant)",Doporučila bych Kočár z Vídně,Doporučila bych X-name
@@ -591,7 +591,7 @@ goodbye(),goodbye(),Děkuji a na shledanou .,Děkuji a na shledanou .
 "inform(name='Kočár z Vídně',type=restaurant)","inform(name=X-name,type=restaurant)",Doporučuji příjemnou restauraci Kočár z Vídně,Doporučuji příjemnou restauraci X-name
 "inform(name='Café Kampus',near='Petřín Tower',price_range=moderate)","inform(name=X-name,near=X-near,price_range=X-price_range)",Restaurace Café Kampus patří do středně drahé cenové skupiny a nachází se poblíž Petřínské věže .,Restaurace X-name patří do X-price_range cenové skupiny a nachází se poblíž X-near .
 goodbye(),goodbye(),Na shledanou,Na shledanou
-"inform(kids_allowed=yes,name=Místo)","inform(kids_allowed=yes,name=X-name)",Místo je vhodné pro děti na večeři .,X-name je vhodné pro děti na večeři .
+"inform(kids_allowed=yes,name=Místo,good_for_meal=dinner)","inform(kids_allowed=yes,name=X-name,good_for_meal=X-good_for_meal)",Místo je vhodné pro děti na večeři .,X-name je vhodné pro děti na X-good_for_meal .
 ?request(price_range),?request(price_range),Jaké ceny vám vyhovují ?,Jaké ceny vám vyhovují ?
 "inform(good_for_meal=dinner,kids_allowed=yes,name=Místo)","inform(good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name)","Je tu restaurace s názvem Místo , která podává večeře a vítá děti .","Je tu restaurace s názvem X-name , která podává X-good_for_meal a vítá děti ."
 ?request(price_range),?request(price_range),Jakou cenovou úroveň preferujete ?,Jakou cenovou úroveň preferujete ?
@@ -669,7 +669,7 @@ goodbye(),goodbye(),"Na shledanou , ráda jsem pomohla .","Na shledanou , ráda 
 "inform(area=Karlín,good_for_meal=breakfast,kids_allowed=no,name=Ananta)","inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name)","Ananta se hodí na snídani , nachází se v Karlíně a nehodí se pro děti .","X-name se hodí na X-good_for_meal , nachází se v X-area a nehodí se pro děti ."
 "inform(address='Náprstkova 17',name='Café Kampus',postcode='155 00')","inform(address=X-address,name=X-name,postcode=X-postcode)",Adresa restaurace Café Kampus je ulice Náprstkova 17 a poštovní směrovací číslo je 155 00 .,Adresa restaurace X-name je ulice X-address a poštovní směrovací číslo je X-postcode .
 "inform(kids_allowed=yes,name='Green Spirit',price_range=expensive)","inform(kids_allowed=yes,name=X-name,price_range=X-price_range)",Green Spirit je drahá restaurace vhodná pro návštěvu s dětmi .,X-name je X-price_range restaurace vhodná pro návštěvu s dětmi .
-inform_no_match(area='Staré Město'),inform_no_match(area=X-area),V oblasti Starého města nejsou žádné restaurace .,V oblasti X-area nejsou žádné restaurace .
+inform_no_match(area='Staré Město'),inform_no_match(area=X-area),V oblasti Starého Města nejsou žádné restaurace .,V oblasti X-area nejsou žádné restaurace .
 ?select(kids_allowed='yes or no'),?select(kids_allowed='yes or no'),"Zajímá vás , zda je povolen vstup s dětmi ?","Zajímá vás , zda je povolen vstup s dětmi ?"
 goodbye(),goodbye(),Na shledanou .,Na shledanou .
 ?reqmore(),?reqmore(),Chcete více informací ?,Chcete více informací ?
@@ -783,7 +783,7 @@ goodbye(),goodbye(),Přeji příjemný den,Přeji příjemný den
 "inform(address='Karmelitská 4',name='Café Kampus')","inform(address=X-address,name=X-name)",Café Kampus naleznete na ulici Karmelitská 4 .,X-name naleznete na ulici X-address .
 "inform(address='Kaprova 35',name=Ananta)","inform(address=X-address,name=X-name)",Ananta se nachází v ulici Kaprova 35 .,X-name se nachází v ulici X-address .
 "inform(good_for_meal=breakfast,kids_allowed=no,name=Místo)","inform(good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name)","Našla jsem restauraci jménem Místo , kde není povolen vstup s dětmi a mají zde dobré snídaně .","Našla jsem restauraci jménem X-name , kde není povolen vstup s dětmi a mají zde dobré X-good_for_meal ."
-inform_no_match(area=Dejvice),inform_no_match(area=X-area),V Dejvicích nejsou žádné restaurace s francouzskou kuchyní .,V X-area nejsou žádné restaurace s francouzskou kuchyní .
+"inform_no_match(area=Dejvice,food=French)","inform_no_match(area=X-area,food=X-food)",V Dejvicích nejsou žádné restaurace s francouzskou kuchyní .,V X-area nejsou žádné restaurace s X-food kuchyní .
 "inform(food=vegetarian,good_for_meal=dinner,kids_allowed=yes,name='Green Spirit',near=Stromovka)","inform(food=X-food,good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name,near=X-near)","Green Spirit se nachází blízko Stromovky , nabízí vegetariánské večeře a děti jsou zde vítány .","X-name se nachází blízko X-near , nabízí X-food X-good_for_meal a děti jsou zde vítány ."
 "inform(kids_allowed=no,name='Kočár z Vídně',near=Stromovka,price_range=moderate)","inform(kids_allowed=no,name=X-name,near=X-near,price_range=X-price_range)",Blízko Stromovky se nachází Kočár z Vídně . Není vhodná pro děti a nabízí běžné ceny .,Blízko X-near se nachází X-name . Není vhodná pro děti a nabízí X-price_range ceny .
 goodbye(),goodbye(),Děkuji a přeji krásný den,Děkuji a přeji krásný den
@@ -868,7 +868,7 @@ goodbye(),goodbye(),Zatím !,Zatím !
 "inform(area=Hradčany,food=Indian,name='Green Spirit',price_range=cheap)","inform(area=X-area,food=X-food,name=X-name,price_range=X-price_range)",Green Spirit je hezká levná indická restaurace a nachází se v oblasti Hradčan .,X-name je hezká X-price_range X-food restaurace a nachází se v oblasti X-area .
 "inform(name='Baráčnická rychta',type=restaurant)","inform(name=X-name,type=restaurant)",Baráčnická rychta dělá skvělá jídla .,X-name dělá skvělá jídla .
 goodbye(),goodbye(),Bylo mi potěšením . Na shledanou .,Bylo mi potěšením . Na shledanou .
-"inform_only_match(area=Smíchov,kids_allowed=no,name='Café Kampus',price_range=moderate)","inform_only_match(area=X-area,kids_allowed=no,name=X-name,price_range=X-price_range)","Café Kampus je jediná středně drahá restaurace na Smíchově , kde jsou děti vítány .","X-name je jediná X-price_range restaurace na X-area , kde jsou děti vítány ."
+"inform_only_match(area=Smíchov,kids_allowed=yes,name='Café Kampus',price_range=moderate)","inform_only_match(area=X-area,kids_allowed=yes,name=X-name,price_range=X-price_range)","Café Kampus je jediná středně drahá restaurace na Smíchově , kde jsou děti vítány .","X-name je jediná X-price_range restaurace na X-area , kde jsou děti vítány ."
 "inform(area=Smíchov,name=BarBar)","inform(area=X-area,name=X-name)",Restauraci BarBar najdete na Smíchově .,Restauraci X-name najdete na X-area .
 "inform(address='Karmelitská 45',name=Ananta,near=Stromovka)","inform(address=X-address,name=X-name,near=X-near)","Ananta se nachází blízko Stromovky , na adrese ulice Karmelitská 45 .","X-name se nachází blízko X-near , na adrese ulice X-address ."
 goodbye(),goodbye(),Na slyšenou !,Na slyšenou !
@@ -1081,7 +1081,7 @@ goodbye(),goodbye(),Nemáte zač . Mějte se .,Nemáte zač . Mějte se .
 "inform(name=BarBar,type=restaurant)","inform(name=X-name,type=restaurant)",BarBar je restaurace,X-name je restaurace
 goodbye(),goodbye(),"Na shledanou , děkujeme za využití našich služeb .","Na shledanou , děkujeme za využití našich služeb ."
 "inform(name='U Konšelů',postcode='128 00')","inform(name=X-name,postcode=X-postcode)",Poštovní směrovací číslo restaurace U Konšelů je 128 00 .,Poštovní směrovací číslo restaurace X-name je X-postcode .
-"inform(kids_allowed=no,name='Kočár z Vídně',near='Wenceslas Square',price_range=moderate)","inform(kids_allowed=no,name=X-name,near=X-near,price_range=X-price_range)","Kočár z Vídně je poblíž Václavského náměstí , hodí se pro děti a má střední ceny .","X-name je poblíž X-near , hodí se pro děti a má X-price_range ceny ."
+"inform(kids_allowed=yes,name='Kočár z Vídně',near='Wenceslas Square',price_range=moderate)","inform(kids_allowed=yes,name=X-name,near=X-near,price_range=X-price_range)","Kočár z Vídně je poblíž Václavského náměstí , hodí se pro děti a má střední ceny .","X-name je poblíž X-near , hodí se pro děti a má X-price_range ceny ."
 "inform(count=4,kids_allowed=yes,price_range=expensive,type=restaurant)","inform(count=X-count,kids_allowed=yes,price_range=X-price_range,type=restaurant)","Jsou zde 4 restaurace vyšší cenové skupiny , kam můžete i s dětmi .","Jsou zde X-count restaurace X-price_range cenové skupiny , kam můžete i s dětmi ."
 ?request(price_range),?request(price_range),Jaká cenová kategorie prosím ?,Jaká cenová kategorie prosím ?
 goodbye(),goodbye(),"Na shledanou , děkujeme za využití našich služeb .","Na shledanou , děkujeme za využití našich služeb ."
@@ -1184,13 +1184,13 @@ goodbye(),goodbye(),Přeji příjemný den,Přeji příjemný den
 "inform(address='Malostranské náměstí 30',name=Ananta)","inform(address=X-address,name=X-name)",Adresa podniku Ananta je Malostranské náměstí 30 .,Adresa podniku X-name je X-address .
 inform_no_match(area='Staré Město'),inform_no_match(area=X-area),Neznám žádnou restauraci v oblasti Staré Město .,Neznám žádnou restauraci v oblasti X-area .
 "inform(name=Místo,price='150 Kč')","inform(name=X-name,price=X-price)",Cena restaurace Místo je 150 Kč,Cena restaurace X-name je X-price
-inform_no_match(area=Vinohrady),inform_no_match(area=X-area),Na Vinohradech nejsou žádné restaurace vhodné pro děti .,Na X-area nejsou žádné restaurace vhodné pro děti .
+"inform_no_match(area=Vinohrady,kids_allowed=yes)","inform_no_match(area=X-area,kids_allowed=yes)",Na Vinohradech nejsou žádné restaurace vhodné pro děti .,Na X-area nejsou žádné restaurace vhodné pro děti .
 goodbye(),goodbye(),Děkuji za zavolání .,Děkuji za zavolání .
 goodbye(),goodbye(),Mějte se .,Mějte se .
 goodbye(),goodbye(),Těšilo mě .,Těšilo mě .
 goodbye(),goodbye(),Přeji hezký den,Přeji hezký den
 "inform(address='Národní 26',name=Ananta)","inform(address=X-address,name=X-name)",Ananta je na Národní 26 .,X-name je na X-address .
-"inform(count=2,good_for_meal=brunch,type=restaurant)","inform(count=X-count,good_for_meal=X-good_for_meal,type=restaurant)","Nabízí se 2 restaurace , kde je vhodné dát si brunch s dětmi .","Nabízí se X-count restaurace , kde je vhodné dát si X-good_for_meal s dětmi ."
+"inform(count=2,good_for_meal=brunch,type=restaurant,kids_allowed=yes)","inform(count=X-count,good_for_meal=X-good_for_meal,type=restaurant,kids_allowed=yes)","Nabízí se 2 restaurace , kde je vhodné dát si brunch s dětmi .","Nabízí se X-count restaurace , kde je vhodné dát si X-good_for_meal s dětmi ."
 "inform(area=Nusle,name=Ananta)","inform(area=X-area,name=X-name)",Doporučuji restauraci Ananta blízko Nuslí .,Doporučuji restauraci X-name blízko X-area .
 "inform(address='Kaprova 17',name='Café Kampus',phone=233146873)","inform(address=X-address,name=X-name,phone=X-phone)","Adresa do Café Kampus je Kaprova 17 , telefon 233146873 .","Adresa do X-name je X-address , telefon X-phone ."
 "inform(count=94,food=Turkish,price_range=moderate,type=restaurant)","inform(count=X-count,food=X-food,price_range=X-price_range,type=restaurant)",Našla jsem 94 středně drahých restaurací s tureckou kuchyní .,Našla jsem X-count X-price_range restaurací s X-food kuchyní .
@@ -1441,7 +1441,7 @@ goodbye(),goodbye(),Děkujeme za použití našeho dialogového systému . Hezk�
 ?request(good_for_meal),?request(good_for_meal),"Preferujete snídani , brunch , oběd nebo večeři ?","Preferujete snídani , brunch , oběd nebo večeři ?"
 "inform(address='Karmelitská 4',name='Green Spirit')","inform(address=X-address,name=X-name)",Adresa Green Spiritu je ulice Karmelitská 4 .,Adresa X-name je ulice X-address .
 ?request(good_for_meal),?request(good_for_meal),Jaké jídlo konkrétně hledáte ?,Jaké jídlo konkrétně hledáte ?
-"inform(food=Mexican,kids_allowed=yes,name=BarBar,near='Charles Bridge')","inform(food=X-food,kids_allowed=yes,name=X-name,near=X-near)",BarBar poblíž Karlova mostu podává mexická jídla a není vhodný pro děti .,X-name poblíž X-near podává X-food jídla a není vhodný pro děti .
+"inform(food=Mexican,kids_allowed=no,name=BarBar,near='Charles Bridge')","inform(food=X-food,kids_allowed=no,name=X-name,near=X-near)",BarBar poblíž Karlova mostu podává mexická jídla a není vhodný pro děti .,X-name poblíž X-near podává X-food jídla a není vhodný pro děti .
 ?reqmore(),?reqmore(),Mohu Vám pomoci s něčím dalším ?,Mohu Vám pomoci s něčím dalším ?
 "inform(kids_allowed=no,name=Místo,price_range=expensive)","inform(kids_allowed=no,name=X-name,price_range=X-price_range)",Místo je příjemná restaurace drahé cenové kategorie a děti v ní nejsou vítány .,X-name je příjemná restaurace X-price_range cenové kategorie a děti v ní nejsou vítány .
 ?request(price_range),?request(price_range),Jakou cenovou skupinu byste rádi ?,Jakou cenovou skupinu byste rádi ?
@@ -1554,7 +1554,7 @@ goodbye(),goodbye(),Na slyšenou příště .,Na slyšenou příště .
 goodbye(),goodbye(),Děkuji za zavolání . Na shledanou .,Děkuji za zavolání . Na shledanou .
 goodbye(),goodbye(),Děkujeme za použití našeho dialogového systému . Hezký den .,Děkujeme za použití našeho dialogového systému . Hezký den .
 "inform(area=Smíchov,good_for_meal=breakfast,kids_allowed=no,name='U Tučňáků')","inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name)","U Tučňáků se nachází na Smíchově a podává snídaně , ale nesmíte sem s dětmi .","X-name se nachází na X-area a podává X-good_for_meal , ale nesmíte sem s dětmi ."
-?select(kids_allowed='yes or no'),?select(kids_allowed='yes or no'),Chtěli byste večeřet v restauraci vhodné i pro děti ?,Chtěli byste večeřet v restauraci vhodné i pro děti ?
+"?select(kids_allowed='yes or no',good_for_meal=dinner)","?select(kids_allowed='yes or no',good_for_meal=dinner)",Chtěli byste večeřet v restauraci vhodné i pro děti ?,Chtěli byste večeřet v restauraci vhodné i pro děti ?
 "inform(kids_allowed=none,name=BarBar)","inform(kids_allowed=none,name=X-name)","Nevím , zdali je BarBar přístupný dětem .","Nevím , zdali je X-name přístupný dětem ."
 goodbye(),goodbye(),"Na shledanou , přeji krásný den .","Na shledanou , přeji krásný den ."
 "inform(food=Italian,name=Místo)","inform(food=X-food,name=X-name)",Místo podává italskou kuchyni,X-name podává X-food kuchyni
@@ -1867,7 +1867,7 @@ goodbye(),goodbye(),Zatím !,Zatím !
 goodbye(),goodbye(),Děkuji za zavolání . Na shledanou .,Děkuji za zavolání . Na shledanou .
 "inform(address='Karmelitská 36',name='Café Savoy',postcode='138 00')","inform(address=X-address,name=X-name,postcode=X-postcode)","Café Savoy můžete najít v Karmelitské 36 , 138 00 .","X-name můžete najít v X-address , X-postcode ."
 "inform(name='Green Spirit',near=Stromovka,price_range=cheap)","inform(name=X-name,near=X-near,price_range=X-price_range)",Green Spirit je v levné cenové skupině a nachází se u Stromovky .,X-name je v X-price_range cenové skupině a nachází se u X-near .
-inform_no_match(area='Staré Město'),inform_no_match(area=X-area),Nemůžu najít žádné restaurace na Starém městě .,Nemůžu najít žádné restaurace na X-area .
+inform_no_match(area='Staré Město'),inform_no_match(area=X-area),Nemůžu najít žádné restaurace na Starém Městě .,Nemůžu najít žádné restaurace na X-area .
 goodbye(),goodbye(),Na shledanou . Omlouvám se .,Na shledanou . Omlouvám se .
 ?confirm(area=dont_care),?confirm(area=dont_care),"Mohu potvrdit , že Vám nezáleží na lokalitě ?","Mohu potvrdit , že Vám nezáleží na lokalitě ?"
 "inform(kids_allowed=yes,name=Ferdinanda,price_range=cheap)","inform(kids_allowed=yes,name=X-name,price_range=X-price_range)","Ferdinanda je levná restaurace , kam je povolen vstup s dětmi .","X-name je X-price_range restaurace , kam je povolen vstup s dětmi ."
@@ -2332,7 +2332,7 @@ goodbye(),goodbye(),Děkuji a přeji krásný den,Děkuji a přeji krásný den
 goodbye(),goodbye(),Na shledanou a hezký den .,Na shledanou a hezký den .
 "inform(address='Štefánikova 50',name='Pivo & Basilico')","inform(address=X-address,name=X-name)",Pivo & Basilico má adresu Štefánikova 50,X-name má adresu X-address
 "inform(kids_allowed=yes,name='U Konšelů')","inform(kids_allowed=yes,name=X-name)",Restaurace U Konšelů je přístupná dětem .,Restaurace X-name je přístupná dětem .
-"inform(area=Smíchov,good_for_meal=dinner,kids_allowed=no,name='Baráčnická rychta')","inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name)","Baráčnická rychta je příjemná restaurace na Smíchově , je vstřícná k dětem a hodí se na večeři .","X-name je příjemná restaurace na X-area , je vstřícná k dětem a hodí se na X-good_for_meal ."
+"inform(area=Smíchov,good_for_meal=dinner,kids_allowed=yes,name='Baráčnická rychta')","inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name)","Baráčnická rychta je příjemná restaurace na Smíchově , je vstřícná k dětem a hodí se na večeři .","X-name je příjemná restaurace na X-area , je vstřícná k dětem a hodí se na X-good_for_meal ."
 goodbye(),goodbye(),"Děkuju Vám , na shledanou .","Děkuju Vám , na shledanou ."
 "inform(kids_allowed=yes,name='Švejk Restaurant',price_range=moderate)","inform(kids_allowed=yes,name=X-name,price_range=X-price_range)","Restaurace Švejk je příjemné místo ve střední cenové kategorii , které je vhodné pro děti .","X-name je příjemné místo ve X-price_range cenové kategorii , které je vhodné pro děti ."
 "inform(name=BarBar,near='Powder Tower',price_range='expensive or cheap')","inform(name=X-name,near=X-near,price_range=X-price_range)",BarBar blízko Prašné brány nabízí drahé nebo levné jídlo .,X-name blízko X-near nabízí X-price_range jídlo .
@@ -2474,7 +2474,7 @@ goodbye(),goodbye(),Na shledanou,Na shledanou
 "inform(address='Štefánikova 40',name='Café Kampus')","inform(address=X-address,name=X-name)",Adresa Café Kampus je ulice Štefánikova 40 .,Adresa X-name je ulice X-address .
 goodbye(),goodbye(),"Doufám , že jsem zodpověděla všechny vaše otázky . Děkuji za zavolání . Na shledanou .","Doufám , že jsem zodpověděla všechny vaše otázky . Děkuji za zavolání . Na shledanou ."
 "inform(address='Tržiště 38',name='Kočár z Vídně')","inform(address=X-address,name=X-name)",Kočár z Vídně se nachází na adrese Tržiště 38 .,X-name se nachází na adrese X-address .
-"inform(kids_allowed=no,name='Švejk Restaurant',price_range=expensive)","inform(kids_allowed=no,name=X-name,price_range=X-price_range)","Restaurace Švejk je hezká , vhodná pro návštěvu s dětmi a je v drahé cenové kategorii .","X-name je hezká , vhodná pro návštěvu s dětmi a je v X-price_range cenové kategorii ."
+"inform(kids_allowed=yes,name='Švejk Restaurant',price_range=expensive)","inform(kids_allowed=yes,name=X-name,price_range=X-price_range)","Restaurace Švejk je hezká , vhodná pro návštěvu s dětmi a je v drahé cenové kategorii .","X-name je hezká , vhodná pro návštěvu s dětmi a je v X-price_range cenové kategorii ."
 "inform(address='Náprstkova 29',name='Green Spirit',phone=261270888)","inform(address=X-address,name=X-name,phone=X-phone)",Adresa podniku Green Spirit je Náprstkova 29 a telefonní číslo je 261270888 .,Adresa podniku X-name je X-address a telefonní číslo je X-phone .
 ?select(kids_allowed='yes or no'),?select(kids_allowed='yes or no'),"Chcete restauraci , kde je dětem vstup povolen , nebo ne ?","Chcete restauraci , kde je dětem vstup povolen , nebo ne ?"
 goodbye(),goodbye(),"Děkuji Vám , na shledanou","Děkuji Vám , na shledanou"
@@ -3235,7 +3235,7 @@ goodbye(),goodbye(),Na shledanou a hezký den .,Na shledanou a hezký den .
 goodbye(),goodbye(),"Není za co , na shledanou .","Není za co , na shledanou ."
 "inform(name='Švejk Restaurant',price='between 230 and 290 Kč')","inform(name=X-name,price=X-price)",Ceny v Restauraci Švejk se pohybují kolem 230 až 290 Kč .,Ceny v X-name se pohybují kolem X-price .
 "inform(name=BarBar,near=Stromovka,price_range=cheap)","inform(name=X-name,near=X-near,price_range=X-price_range)","BarBar je levná restaurace , která se nachází poblíž Stromovky .","X-name je X-price_range restaurace , která se nachází poblíž X-near ."
-"inform(area='Staré Město',name=Místo)","inform(area=X-area,name=X-name)",Restaurace Místo sídlí na Starém městě .,Restaurace X-name sídlí na X-area .
+"inform(area='Staré Město',name=Místo)","inform(area=X-area,name=X-name)",Restaurace Místo sídlí na Starém Městě .,Restaurace X-name sídlí na X-area .
 ?request(good_for_meal),?request(good_for_meal),"Hledáte snídaně , obědy nebo večeře ?","Hledáte snídaně , obědy nebo večeře ?"
 goodbye(),goodbye(),Děkuji a přeji dobrou chuť !,Děkuji a přeji dobrou chuť !
 "inform(food=vegetarian,good_for_meal=breakfast,name='Švejk Restaurant')","inform(food=X-food,good_for_meal=X-good_for_meal,name=X-name)",Restaurace Švejk nabízí vegetariánská jídla na snídani .,X-name nabízí X-food jídla na X-good_for_meal .
@@ -3287,7 +3287,7 @@ goodbye(),goodbye(),"Děkuji , na shledanou .","Děkuji , na shledanou ."
 "inform(address='Žatecká 42',name='U Tučňáků')","inform(address=X-address,name=X-name)",Adresa U Tučňáků je Žatecká 42 .,Adresa X-name je X-address .
 ?reqmore(),?reqmore(),Chcete ještě s něčím pomoci ?,Chcete ještě s něčím pomoci ?
 ?request(near),?request(near),Poblíž čeho to má být ?,Poblíž čeho to má být ?
-"inform(count=11,near='Powder Tower',type=restaurant)","inform(count=X-count,near=X-near,type=restaurant)",Poblíž Prašné brány najdete 11 restaurací s americkou kuchyní .,Poblíž X-near najdete X-count restaurací s americkou kuchyní .
+"inform(count=11,near='Powder Tower',food=American,type=restaurant)","inform(count=X-count,near=X-near,food=X-food,type=restaurant)",Poblíž Prašné brány najdete 11 restaurací s americkou kuchyní .,Poblíž X-near najdete X-count restaurací s X-food kuchyní .
 ?request(price_range),?request(price_range),Do jaké cenové skupiny má daná restaurace spadat ?,Do jaké cenové skupiny má daná restaurace spadat ?
 ?request(price_range),?request(price_range),Mohu se zeptat na cenovou skupinu ?,Mohu se zeptat na cenovou skupinu ?
 goodbye(),goodbye(),Tak na shledanou !,Tak na shledanou !
@@ -3297,7 +3297,7 @@ goodbye(),goodbye(),Tak na shledanou !,Tak na shledanou !
 goodbye(),goodbye(),Děkuji !,Děkuji !
 "inform(count=6,near=Stromovka,type=restaurant)","inform(count=X-count,near=X-near,type=restaurant)",Blízko Stromovky jsem našla 6 restaurací .,Blízko X-near jsem našla X-count restaurací .
 "inform(count=17,near='TV Tower',type=restaurant)","inform(count=X-count,near=X-near,type=restaurant)",Blízko televizní věže jsem našla 17 restaurací .,Blízko X-near jsem našla X-count restaurací .
-?confirm(kids_allowed=no),?confirm(kids_allowed=no),"Prosím potvrďte , že chcete restauraci vhodnou pro děti .","Prosím potvrďte , že chcete restauraci vhodnou pro děti ."
+?confirm(kids_allowed=yes),?confirm(kids_allowed=yes),"Prosím potvrďte , že chcete restauraci vhodnou pro děti .","Prosím potvrďte , že chcete restauraci vhodnou pro děti ."
 goodbye(),goodbye(),Děkuji !,Děkuji !
 ?request(price_range),?request(price_range),Mohu se zeptat na vaši cenovou představu ?,Mohu se zeptat na vaši cenovou představu ?
 "inform(area='Malá Strana',name='U Tučňáků')","inform(area=X-area,name=X-name)",U Tučňáků je příjemná restaurace v oblasti Malé Strany .,X-name je příjemná restaurace v oblasti X-area .
@@ -3513,7 +3513,7 @@ goodbye(),goodbye(),Děkuji .,Děkuji .
 "inform(address='Tržiště 1',kids_allowed=no,name='U Konšelů',phone=250625609,postcode='136 00')","inform(address=X-address,kids_allowed=no,name=X-name,phone=X-phone,postcode=X-postcode)","U Konšelů nejsou děti vítány a jejich adresa je Tržiště 1 , telefon 250625609 a poštovní směrovací číslo je 136 00 .","X-name nejsou děti vítány a jejich adresa je X-address , telefon X-phone a poštovní směrovací číslo je X-postcode ."
 ?request(near),?request(near),"Prosím , upřesněte , poblíž čeho chcete být ?","Prosím , upřesněte , poblíž čeho chcete být ?"
 goodbye(),goodbye(),Přeji příjemný den .,Přeji příjemný den .
-"inform_only_match(food=Czech,good_for_meal=lunch,name='Kočár z Vídně')","inform_only_match(food=X-food,good_for_meal=X-good_for_meal,name=X-name)","Jediná restaurace , kde je povolen vstup s dětmi a podávají zde česká jídla k obědu , je Kočár z Vídně .","Jediná restaurace , kde je povolen vstup s dětmi a podávají zde X-food jídla k X-good_for_meal , je X-name ."
+"inform_only_match(food=Czech,kids_allowed=yes,good_for_meal=lunch,name='Kočár z Vídně')","inform_only_match(food=X-food,kids_allowed=yes,good_for_meal=X-good_for_meal,name=X-name)","Jediná restaurace , kde je povolen vstup s dětmi a podávají zde česká jídla k obědu , je Kočár z Vídně .","Jediná restaurace , kde je povolen vstup s dětmi a podávají zde X-food jídla k X-good_for_meal , je X-name ."
 ?confirm(price_range=cheap),?confirm(price_range=X-price_range),"Mohu potvrdit , že hledáte levnou restauraci ?","Mohu potvrdit , že hledáte X-price_range restauraci ?"
 "inform(food=Turkish,good_for_meal=dinner,name='Švejk Restaurant',near='Prague Castle')","inform(food=X-food,good_for_meal=X-good_for_meal,name=X-name,near=X-near)",Restaurace Švejk je dobré místo na večeři . Podávají zde turecká jídla a nachází se poblíž Pražského hradu .,X-name je dobré místo na X-good_for_meal . Podávají zde X-food jídla a nachází se poblíž X-near .
 "inform(name=Ferdinanda,phone=263934630,postcode='144 00')","inform(name=X-name,phone=X-phone,postcode=X-postcode)",Poštovní směrovací číslo Ferdinandy je 144 00 a její telefonní číslo je 263934630 .,Poštovní směrovací číslo X-name je X-postcode a její telefonní číslo je X-phone .
@@ -3534,7 +3534,7 @@ goodbye(),goodbye(),"Na shledanou , přeji krásný den .","Na shledanou , přej
 "inform(area=Žižkov,count=2,food=Czech,price_range=cheap,type=restaurant)","inform(area=X-area,count=X-count,food=X-food,price_range=X-price_range,type=restaurant)",Na Žižkově jsou 2 levné české restaurace .,Na X-area jsou X-count X-price_range X-food restaurace .
 ?confirm(area='Malá Strana'),?confirm(area=X-area),"Mohu se ujistit , že chcete najít restauraci na Malé Straně ?","Mohu se ujistit , že chcete najít restauraci na X-area ?"
 "inform(count=54,kids_allowed=yes,price_range=cheap,type=restaurant)","inform(count=X-count,kids_allowed=yes,price_range=X-price_range,type=restaurant)","Je tu 54 levných restaurací , kam mohou děti .","Je tu X-count X-price_range restaurací , kam mohou děti ."
-"inform(area='Staré Město',food=French,name='U Konšelů')","inform(area=X-area,food=X-food,name=X-name)",V areálu Starého města je francouzská restaurace U Konšelů .,V areálu X-area je X-food restaurace X-name .
+"inform(area='Staré Město',food=French,name='U Konšelů')","inform(area=X-area,food=X-food,name=X-name)",V areálu Starého Města je francouzská restaurace U Konšelů .,V areálu X-area je X-food restaurace X-name .
 goodbye(),goodbye(),Na shledanou !,Na shledanou !
 ?request(price_range),?request(price_range),Jaké prosím hledáte cenové skupiny ?,Jaké prosím hledáte cenové skupiny ?
 "inform(name='Kočár z Vídně',phone=293924193,price_range=cheap)","inform(name=X-name,phone=X-phone,price_range=X-price_range)",Kočár z Vídně je levný podnik s telefonem 293924193,X-name je X-price_range podnik s telefonem X-phone

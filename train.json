@@ -540,10 +540,10 @@
         "delex_text": "Mám tu restauraci X-name ."
     },
     {
-        "da": "inform(kids_allowed=yes,name='Švejk Restaurant')",
-        "delex_da": "inform(kids_allowed=yes,name=X-name)",
+        "da": "inform(food=vegetarian,kids_allowed=yes,name='Švejk Restaurant')",
+        "delex_da": "inform(food=X-food,kids_allowed=yes,name=X-name)",
         "text": "Restaurace Švejk je vegetariánská a vaří i pro děti .",
-        "delex_text": "X-name je vegetariánská a vaří i pro děti ."
+        "delex_text": "X-name je X-food a vaří i pro děti ."
     },
     {
         "da": "inform(name='Baráčnická rychta',postcode='159 00')",
@@ -1398,10 +1398,10 @@
         "delex_text": "Mám tady hezkou X-name ."
     },
     {
-        "da": "inform_no_match(area=Hradčany)",
-        "delex_da": "inform_no_match(area=X-area)",
+        "da": "inform_no_match(area=Hradčany,food=French)",
+        "delex_da": "inform_no_match(area=X-area,food=X-food)",
         "text": "Nevím o žádné restauraci na Hradčanech , která by servírovala francouzskou kuchyni .",
-        "delex_text": "Nevím o žádné restauraci na X-area , která by servírovala francouzskou kuchyni ."
+        "delex_text": "Nevím o žádné restauraci na X-area , která by servírovala X-food kuchyni ."
     },
     {
         "da": "inform(address='Štefánikova 49',name='Švejk Restaurant')",
@@ -1590,8 +1590,8 @@
         "delex_text": "Restaurace X-name je vhodná pro návštěvu s dětmi ."
     },
     {
-        "da": "inform(good_for_meal=dinner,kids_allowed=no,name='Švejk Restaurant',near='Old Town Square')",
-        "delex_da": "inform(good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name,near=X-near)",
+        "da": "inform(good_for_meal=dinner,kids_allowed=yes,name='Švejk Restaurant',near='Old Town Square')",
+        "delex_da": "inform(good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name,near=X-near)",
         "text": "Restauraci Švejk najdeme poblíž Staroměstského náměstí . Je vhodná pro děti a dělají zde dobré večeře .",
         "delex_text": "X-name najdeme poblíž X-near . Je vhodná pro děti a dělají zde dobré X-good_for_meal ."
     },
@@ -1644,8 +1644,8 @@
         "delex_text": "Děkuji za zavolání . Děkuji ."
     },
     {
-        "da": "inform(area=Smíchov,kids_allowed=no,name='Pivo & Basilico')",
-        "delex_da": "inform(area=X-area,kids_allowed=no,name=X-name)",
+        "da": "inform(area=Smíchov,kids_allowed=yes,name='Pivo & Basilico')",
+        "delex_da": "inform(area=X-area,kids_allowed=yes,name=X-name)",
         "text": "Pivo & Basilico je příjemná restaurace na Smíchově , která je přístupná dětem .",
         "delex_text": "X-name je příjemná restaurace na X-area , která je přístupná dětem ."
     },
@@ -2066,7 +2066,7 @@
     {
         "da": "inform(area='Staré Město',name=Místo)",
         "delex_da": "inform(area=X-area,name=X-name)",
-        "text": "Místo leží v Starém městě .",
+        "text": "Místo leží ve Starém Městě .",
         "delex_text": "X-name leží v X-area ."
     },
     {
@@ -2462,7 +2462,7 @@
     {
         "da": "inform(area='Staré Město',name=Ananta)",
         "delex_da": "inform(area=X-area,name=X-name)",
-        "text": "Restaurace Ananta se nachází na Starém městě .",
+        "text": "Restaurace Ananta se nachází na Starém Městě .",
         "delex_text": "Restaurace X-name se nachází na X-area ."
     },
     {
@@ -3248,7 +3248,7 @@
     {
         "da": "inform_no_match(area='Staré Město')",
         "delex_da": "inform_no_match(area=X-area)",
-        "text": "Na Starém městě nejsou žádné takové restaurace .",
+        "text": "Na Starém Městě nejsou žádné takové restaurace .",
         "delex_text": "Na X-area nejsou žádné takové restaurace ."
     },
     {
@@ -3552,10 +3552,10 @@
         "delex_text": "Na shledanou"
     },
     {
-        "da": "inform(kids_allowed=yes,name=Místo)",
-        "delex_da": "inform(kids_allowed=yes,name=X-name)",
+        "da": "inform(kids_allowed=yes,name=Místo,good_for_meal=dinner)",
+        "delex_da": "inform(kids_allowed=yes,name=X-name,good_for_meal=X-good_for_meal)",
         "text": "Místo je vhodné pro děti na večeři .",
-        "delex_text": "X-name je vhodné pro děti na večeři ."
+        "delex_text": "X-name je vhodné pro děti na X-good_for_meal ."
     },
     {
         "da": "?request(price_range)",
@@ -4022,7 +4022,7 @@
     {
         "da": "inform_no_match(area='Staré Město')",
         "delex_da": "inform_no_match(area=X-area)",
-        "text": "V oblasti Starého města nejsou žádné restaurace .",
+        "text": "V oblasti Starého Města nejsou žádné restaurace .",
         "delex_text": "V oblasti X-area nejsou žádné restaurace ."
     },
     {
@@ -4704,10 +4704,10 @@
         "delex_text": "Našla jsem restauraci jménem X-name , kde není povolen vstup s dětmi a mají zde dobré X-good_for_meal ."
     },
     {
-        "da": "inform_no_match(area=Dejvice)",
-        "delex_da": "inform_no_match(area=X-area)",
+        "da": "inform_no_match(area=Dejvice,food=French)",
+        "delex_da": "inform_no_match(area=X-area,food=X-food)",
         "text": "V Dejvicích nejsou žádné restaurace s francouzskou kuchyní .",
-        "delex_text": "V X-area nejsou žádné restaurace s francouzskou kuchyní ."
+        "delex_text": "V X-area nejsou žádné restaurace s X-food kuchyní ."
     },
     {
         "da": "inform(food=vegetarian,good_for_meal=dinner,kids_allowed=yes,name='Green Spirit',near=Stromovka)",
@@ -5214,8 +5214,8 @@
         "delex_text": "Bylo mi potěšením . Na shledanou ."
     },
     {
-        "da": "inform_only_match(area=Smíchov,kids_allowed=no,name='Café Kampus',price_range=moderate)",
-        "delex_da": "inform_only_match(area=X-area,kids_allowed=no,name=X-name,price_range=X-price_range)",
+        "da": "inform_only_match(area=Smíchov,kids_allowed=yes,name='Café Kampus',price_range=moderate)",
+        "delex_da": "inform_only_match(area=X-area,kids_allowed=yes,name=X-name,price_range=X-price_range)",
         "text": "Café Kampus je jediná středně drahá restaurace na Smíchově , kde jsou děti vítány .",
         "delex_text": "X-name je jediná X-price_range restaurace na X-area , kde jsou děti vítány ."
     },
@@ -6492,8 +6492,8 @@
         "delex_text": "Poštovní směrovací číslo restaurace X-name je X-postcode ."
     },
     {
-        "da": "inform(kids_allowed=no,name='Kočár z Vídně',near='Wenceslas Square',price_range=moderate)",
-        "delex_da": "inform(kids_allowed=no,name=X-name,near=X-near,price_range=X-price_range)",
+        "da": "inform(kids_allowed=yes,name='Kočár z Vídně',near='Wenceslas Square',price_range=moderate)",
+        "delex_da": "inform(kids_allowed=yes,name=X-name,near=X-near,price_range=X-price_range)",
         "text": "Kočár z Vídně je poblíž Václavského náměstí , hodí se pro děti a má střední ceny .",
         "delex_text": "X-name je poblíž X-near , hodí se pro děti a má X-price_range ceny ."
     },
@@ -7110,8 +7110,8 @@
         "delex_text": "Cena restaurace X-name je X-price"
     },
     {
-        "da": "inform_no_match(area=Vinohrady)",
-        "delex_da": "inform_no_match(area=X-area)",
+        "da": "inform_no_match(area=Vinohrady,kids_allowed=yes)",
+        "delex_da": "inform_no_match(area=X-area,kids_allowed=yes)",
         "text": "Na Vinohradech nejsou žádné restaurace vhodné pro děti .",
         "delex_text": "Na X-area nejsou žádné restaurace vhodné pro děti ."
     },
@@ -7146,8 +7146,8 @@
         "delex_text": "X-name je na X-address ."
     },
     {
-        "da": "inform(count=2,good_for_meal=brunch,type=restaurant)",
-        "delex_da": "inform(count=X-count,good_for_meal=X-good_for_meal,type=restaurant)",
+        "da": "inform(count=2,good_for_meal=brunch,type=restaurant,kids_allowed=yes)",
+        "delex_da": "inform(count=X-count,good_for_meal=X-good_for_meal,type=restaurant,kids_allowed=yes)",
         "text": "Nabízí se 2 restaurace , kde je vhodné dát si brunch s dětmi .",
         "delex_text": "Nabízí se X-count restaurace , kde je vhodné dát si X-good_for_meal s dětmi ."
     },
@@ -8652,8 +8652,8 @@
         "delex_text": "Jaké jídlo konkrétně hledáte ?"
     },
     {
-        "da": "inform(food=Mexican,kids_allowed=yes,name=BarBar,near='Charles Bridge')",
-        "delex_da": "inform(food=X-food,kids_allowed=yes,name=X-name,near=X-near)",
+        "da": "inform(food=Mexican,kids_allowed=no,name=BarBar,near='Charles Bridge')",
+        "delex_da": "inform(food=X-food,kids_allowed=no,name=X-name,near=X-near)",
         "text": "BarBar poblíž Karlova mostu podává mexická jídla a není vhodný pro děti .",
         "delex_text": "X-name poblíž X-near podává X-food jídla a není vhodný pro děti ."
     },
@@ -9330,8 +9330,8 @@
         "delex_text": "X-name se nachází na X-area a podává X-good_for_meal , ale nesmíte sem s dětmi ."
     },
     {
-        "da": "?select(kids_allowed='yes or no')",
-        "delex_da": "?select(kids_allowed='yes or no')",
+        "da": "?select(kids_allowed='yes or no',good_for_meal=dinner)",
+        "delex_da": "?select(kids_allowed='yes or no',good_for_meal=dinner)",
         "text": "Chtěli byste večeřet v restauraci vhodné i pro děti ?",
         "delex_text": "Chtěli byste večeřet v restauraci vhodné i pro děti ?"
     },
@@ -11210,7 +11210,7 @@
     {
         "da": "inform_no_match(area='Staré Město')",
         "delex_da": "inform_no_match(area=X-area)",
-        "text": "Nemůžu najít žádné restaurace na Starém městě .",
+        "text": "Nemůžu najít žádné restaurace na Starém Městě .",
         "delex_text": "Nemůžu najít žádné restaurace na X-area ."
     },
     {
@@ -13998,8 +13998,8 @@
         "delex_text": "Restaurace X-name je přístupná dětem ."
     },
     {
-        "da": "inform(area=Smíchov,good_for_meal=dinner,kids_allowed=no,name='Baráčnická rychta')",
-        "delex_da": "inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name)",
+        "da": "inform(area=Smíchov,good_for_meal=dinner,kids_allowed=yes,name='Baráčnická rychta')",
+        "delex_da": "inform(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name)",
         "text": "Baráčnická rychta je příjemná restaurace na Smíchově , je vstřícná k dětem a hodí se na večeři .",
         "delex_text": "X-name je příjemná restaurace na X-area , je vstřícná k dětem a hodí se na X-good_for_meal ."
     },
@@ -14850,8 +14850,8 @@
         "delex_text": "X-name se nachází na adrese X-address ."
     },
     {
-        "da": "inform(kids_allowed=no,name='Švejk Restaurant',price_range=expensive)",
-        "delex_da": "inform(kids_allowed=no,name=X-name,price_range=X-price_range)",
+        "da": "inform(kids_allowed=yes,name='Švejk Restaurant',price_range=expensive)",
+        "delex_da": "inform(kids_allowed=yes,name=X-name,price_range=X-price_range)",
         "text": "Restaurace Švejk je hezká , vhodná pro návštěvu s dětmi a je v drahé cenové kategorii .",
         "delex_text": "X-name je hezká , vhodná pro návštěvu s dětmi a je v X-price_range cenové kategorii ."
     },
@@ -19418,7 +19418,7 @@
     {
         "da": "inform(area='Staré Město',name=Místo)",
         "delex_da": "inform(area=X-area,name=X-name)",
-        "text": "Restaurace Místo sídlí na Starém městě .",
+        "text": "Restaurace Místo sídlí na Starém Městě .",
         "delex_text": "Restaurace X-name sídlí na X-area ."
     },
     {
@@ -19728,10 +19728,10 @@
         "delex_text": "Poblíž čeho to má být ?"
     },
     {
-        "da": "inform(count=11,near='Powder Tower',type=restaurant)",
-        "delex_da": "inform(count=X-count,near=X-near,type=restaurant)",
+        "da": "inform(count=11,near='Powder Tower',food=American,type=restaurant)",
+        "delex_da": "inform(count=X-count,near=X-near,food=X-food,type=restaurant)",
         "text": "Poblíž Prašné brány najdete 11 restaurací s americkou kuchyní .",
-        "delex_text": "Poblíž X-near najdete X-count restaurací s americkou kuchyní ."
+        "delex_text": "Poblíž X-near najdete X-count restaurací s X-food kuchyní ."
     },
     {
         "da": "?request(price_range)",
@@ -19788,8 +19788,8 @@
         "delex_text": "Blízko X-near jsem našla X-count restaurací ."
     },
     {
-        "da": "?confirm(kids_allowed=no)",
-        "delex_da": "?confirm(kids_allowed=no)",
+        "da": "?confirm(kids_allowed=yes)",
+        "delex_da": "?confirm(kids_allowed=yes)",
         "text": "Prosím potvrďte , že chcete restauraci vhodnou pro děti .",
         "delex_text": "Prosím potvrďte , že chcete restauraci vhodnou pro děti ."
     },
@@ -21084,8 +21084,8 @@
         "delex_text": "Přeji příjemný den ."
     },
     {
-        "da": "inform_only_match(food=Czech,good_for_meal=lunch,name='Kočár z Vídně')",
-        "delex_da": "inform_only_match(food=X-food,good_for_meal=X-good_for_meal,name=X-name)",
+        "da": "inform_only_match(food=Czech,kids_allowed=yes,good_for_meal=lunch,name='Kočár z Vídně')",
+        "delex_da": "inform_only_match(food=X-food,kids_allowed=yes,good_for_meal=X-good_for_meal,name=X-name)",
         "text": "Jediná restaurace , kde je povolen vstup s dětmi a podávají zde česká jídla k obědu , je Kočár z Vídně .",
         "delex_text": "Jediná restaurace , kde je povolen vstup s dětmi a podávají zde X-food jídla k X-good_for_meal , je X-name ."
     },
@@ -21212,7 +21212,7 @@
     {
         "da": "inform(area='Staré Město',food=French,name='U Konšelů')",
         "delex_da": "inform(area=X-area,food=X-food,name=X-name)",
-        "text": "V areálu Starého města je francouzská restaurace U Konšelů .",
+        "text": "V areálu Starého Města je francouzská restaurace U Konšelů .",
         "delex_text": "V areálu X-area je X-food restaurace X-name ."
     },
     {

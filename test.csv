@@ -52,7 +52,7 @@ da,delex_da,text,delex_text
 ?request(food),?request(food),Hledáte určitý typ jídla ?,Hledáte určitý typ jídla ?
 "inform(good_for_meal=dinner,name=Ananta,price_range=expensive)","inform(good_for_meal=X-good_for_meal,name=X-name,price_range=X-price_range)",Restaurace Ananta je drahá restaurace ideální pro večeři .,Restaurace X-name je X-price_range restaurace ideální pro X-good_for_meal .
 "inform(name='Café Savoy',phone=244572142)","inform(name=X-name,phone=X-phone)",Telefonní číslo do restaurace Café Savoy je 244572142 .,Telefonní číslo do restaurace X-name je X-phone .
-"inform(count=17,food=Italian,type=restaurant)","inform(count=X-count,food=X-food,type=restaurant)",Nachází se zde 17 italských restaurací podávajících francouzská jídla .,Nachází se zde X-count X-food restaurací podávajících francouzská jídla .
+"inform(count=17,food=Italian,type=restaurant)","inform(count=X-count,food=X-food,type=restaurant)",Nachází se zde 17 italských restaurací .,Nachází se zde X-count X-food restaurací .
 "inform(good_for_meal=brunch,name='Švejk Restaurant',price_range=cheap)","inform(good_for_meal=X-good_for_meal,name=X-name,price_range=X-price_range)",Švejk Restaurant podává levný brunch,X-name podává X-price_range X-good_for_meal
 "inform(name=BarBar,phone=268278738)","inform(name=X-name,phone=X-phone)",Telefonní číslo do podniku BarBar je 268278738 .,Telefonní číslo do podniku X-name je X-phone .
 ?request(food),?request(food),Jaký druh jídla ?,Jaký druh jídla ?
@@ -190,7 +190,7 @@ da,delex_da,text,delex_text
 "inform(name='Green Spirit',phone=285138023)","inform(name=X-name,phone=X-phone)",Green Spirit má telefonní číslo 285138023 .,X-name má telefonní číslo X-phone .
 ?request(food),?request(food),Na co máte chuť ?,Na co máte chuť ?
 ?request(food),?request(food),Hledáte určitý typ jídla ?,Hledáte určitý typ jídla ?
-"inform(food=vegetarian,name='Kočár z Vídně',price_range=moderate)","inform(food=X-food,name=X-name,price_range=X-price_range)","Kočár z Vídně nabízí středně drahá vegetariánská jídla , děti zde nejsou vítány .","X-name nabízí X-price_range X-food jídla , děti zde nejsou vítány ."
+"inform(food=vegetarian,name='Kočár z Vídně',price_range=moderate,kids_allowed=no)","inform(food=X-food,name=X-name,price_range=X-price_range,kids_allowed=no)","Kočár z Vídně nabízí středně drahá vegetariánská jídla , děti zde nejsou vítány .","X-name nabízí X-price_range X-food jídla , děti zde nejsou vítány ."
 "inform(address='Národní 35',name='Café Kampus',price_range=moderate)","inform(address=X-address,name=X-name,price_range=X-price_range)",Café Kampus se nachází na ulici Národní 35 a patří do střední cenové skupiny .,X-name se nachází na ulici X-address a patří do X-price_range cenové skupiny .
 ?request(food),?request(food),Chcete vědět něco o nabízeném jídle ?,Chcete vědět něco o nabízeném jídle ?
 ?request(food),?request(food),Hledáte jídlo ?,Hledáte jídlo ?
@@ -566,7 +566,7 @@ da,delex_da,text,delex_text
 ?request(food),?request(food),Na jaký typ jídla byste měli chuť ?,Na jaký typ jídla byste měli chuť ?
 "inform(area=Karlín,name='Café Savoy',phone=212171940)","inform(area=X-area,name=X-name,phone=X-phone)",Café Savoy leží v Karlíně a má telefonní číslo 212171940 .,X-name leží v X-area a má telefonní číslo X-phone .
 "inform(name=Ferdinanda,phone=272193289)","inform(name=X-name,phone=X-phone)",Telefon do restaurace Ferdinanda je 272193289,Telefon do restaurace X-name je X-phone
-"inform_no_match(near='Old Town Square',price_range=cheap)","inform_no_match(near=X-near,price_range=X-price_range)","Bohužel , poblíž Staroměstského náměstí se nenacházejí žádné restaurace s nízkými cenami , kam by nesměly děti .","Bohužel , poblíž X-near se nenacházejí žádné restaurace s X-price_range cenami , kam by nesměly děti ."
+"inform_no_match(near='Old Town Square',price_range=cheap,kids_allowed=no)","inform_no_match(near=X-near,price_range=X-price_range,kids_allowed=no)","Bohužel , poblíž Staroměstského náměstí se nenacházejí žádné restaurace s nízkými cenami , kam by nesměly děti .","Bohužel , poblíž X-near se nenacházejí žádné restaurace s X-price_range cenami , kam by nesměly děti ."
 "inform(name='Café Kampus',phone=235298252)","inform(name=X-name,phone=X-phone)",Do Café Kampus můžete volat na číslo 235298252 .,Do X-name můžete volat na číslo X-phone .
 "inform(count=239,price_range=dont_care,type=restaurant)","inform(count=X-count,price_range=dont_care,type=restaurant)",Libovolné cenové skupině odpovídá celkem 239 restaurací .,Libovolné cenové skupině odpovídá celkem X-count restaurací .
 "inform(good_for_meal=lunch,kids_allowed=no,name=BarBar,price_range=cheap)","inform(good_for_meal=X-good_for_meal,kids_allowed=no,name=X-name,price_range=X-price_range)","BarBar je příjemná restaurace vhodná pro oběd , kam nemohou děti a ceny jsou tu nízké .","X-name je příjemná restaurace vhodná pro X-good_for_meal , kam nemohou děti a ceny jsou tu X-price_range ."
@@ -639,7 +639,7 @@ da,delex_da,text,delex_text
 "inform(name='Švejk Restaurant',phone=291361517)","inform(name=X-name,phone=X-phone)",Telefon do restaurace Švejk je 291361517,Telefon do X-name je X-phone
 ?request(food),?request(food),Hledáte nějaký konkrétní druh jídla ?,Hledáte nějaký konkrétní druh jídla ?
 ?request(food),?request(food),Chcete nějaký konkrétní druh jídla ?,Chcete nějaký konkrétní druh jídla ?
-"inform_no_match(area='Malá Strana',kids_allowed=no)","inform_no_match(area=X-area,kids_allowed=no)","V oblasti poblíž Malé Strany nejsou žádné restaurace , kde je povolen vstup s dětmi .","V oblasti poblíž X-area nejsou žádné restaurace , kde je povolen vstup s dětmi ."
+"inform_no_match(area='Malá Strana',kids_allowed=yes)","inform_no_match(area=X-area,kids_allowed=yes)","V oblasti poblíž Malé Strany nejsou žádné restaurace , kde je povolen vstup s dětmi .","V oblasti poblíž X-area nejsou žádné restaurace , kde je povolen vstup s dětmi ."
 "inform_no_match(area=Smíchov,price_range=cheap)","inform_no_match(area=X-area,price_range=X-price_range)",Nemám tu na Smíchově žádnou restauraci v nízké cenové kategorii .,Nemám tu na X-area žádnou restauraci v X-price_range cenové kategorii .
 "inform(name=BarBar,phone=229996745)","inform(name=X-name,phone=X-phone)",Telefonní číslo do restaurace BarBar je 229996745 .,Telefonní číslo do restaurace X-name je X-phone .
 ?request(food),?request(food),Jaký typ jídla by vám vyhovoval nejvíce ?,Jaký typ jídla by vám vyhovoval nejvíce ?
@@ -677,7 +677,7 @@ da,delex_da,text,delex_text
 ?request(food),?request(food),Na jakou kuchyni máte chuť ?,Na jakou kuchyni máte chuť ?
 "inform(good_for_meal=brunch,name=BarBar,price_range=cheap)","inform(good_for_meal=X-good_for_meal,name=X-name,price_range=X-price_range)",BarBar je levná a dobrá pro pozdní snídaně .,X-name je X-price_range a dobrá pro X-good_for_meal .
 "inform(count=72,price_range=cheap,type=restaurant)","inform(count=X-count,price_range=X-price_range,type=restaurant)",Je zde 72 levných restaurací .,Je zde X-count X-price_range restaurací .
-"inform(kids_allowed=no,name='U Tučňáků',near='Wenceslas Square')","inform(kids_allowed=no,name=X-name,near=X-near)",Do restaurace U Tučňáků poblíž Václavského náměstí můžete vzít děti .,Do restaurace X-name poblíž X-near můžete vzít děti .
+"inform(kids_allowed=yes,name='U Tučňáků',near='Wenceslas Square')","inform(kids_allowed=yes,name=X-name,near=X-near)",Do restaurace U Tučňáků poblíž Václavského náměstí můžete vzít děti .,Do restaurace X-name poblíž X-near můžete vzít děti .
 "inform(count=229,price_range=dont_care,type=restaurant)","inform(count=X-count,price_range=dont_care,type=restaurant)",V nabídce je 229 restaurací v různých cenových relacích .,V nabídce je X-count restaurací v různých cenových relacích .
 "inform(count=4,food=Asian,type=restaurant)","inform(count=X-count,food=X-food,type=restaurant)","Mám tu 4 restaurace , kde podávají asijská jídla .","Mám tu X-count restaurace , kde podávají X-food jídla ."
 "inform(area=Hradčany,name=Ananta,phone=283348661)","inform(area=X-area,name=X-name,phone=X-phone)","Jmenuje se Ananta , nachází se na Hradčanech a telefonní číslo je 283348661 .","Jmenuje se X-name , nachází se na X-area a telefonní číslo je X-phone ."
@@ -697,7 +697,7 @@ da,delex_da,text,delex_text
 "inform(good_for_meal=lunch,name='U Tučňáků',price_range=moderate)","inform(good_for_meal=X-good_for_meal,name=X-name,price_range=X-price_range)",Restaurace U Tučňáků má přijatelné ceny a můžete se zde dobře naobědvat .,Restaurace X-name má X-price_range ceny a můžete se zde dobře X-good_for_meal .
 "inform(name='Kočár z Vídně',phone=247195364)","inform(name=X-name,phone=X-phone)",Telefonní číslo do Kočáru z Vídně je 247195364,Telefonní číslo do X-name je X-phone
 "inform(address='Kaprova 49',food=German,name='Green Spirit',phone=241717874)","inform(address=X-address,food=X-food,name=X-name,phone=X-phone)",Restaurace Green Spirit nabízí německá jídla . Její telefonní číslo je 241717874 a adresa Kaprova 49 .,Restaurace X-name nabízí X-food jídla . Její telefonní číslo je X-phone a adresa X-address .
-"inform(kids_allowed=no,name='U Tučňáků',near='Charles Bridge')","inform(kids_allowed=no,name=X-name,near=X-near)",Děkuji . U Tučňáků se nachází v blízkosti Karlova mostu a obslouží zde i děti .,Děkuji . X-name se nachází v blízkosti X-near a obslouží zde i děti .
+"inform(kids_allowed=yes,name='U Tučňáků',near='Charles Bridge')","inform(kids_allowed=yes,name=X-name,near=X-near)",Děkuji . U Tučňáků se nachází v blízkosti Karlova mostu a obslouží zde i děti .,Děkuji . X-name se nachází v blízkosti X-near a obslouží zde i děti .
 "inform(name='Green Spirit',phone=220381339)","inform(name=X-name,phone=X-phone)",Do Green Spiritu se dovoláte na čísle 220381339 .,Do X-name se dovoláte na čísle X-phone .
 ?request(food),?request(food),Jaké jídlo hledáte ?,Jaké jídlo hledáte ?
 "inform(food=Turkish,kids_allowed=no,name='Café Kampus',price_range=expensive)","inform(food=X-food,kids_allowed=no,name=X-name,price_range=X-price_range)","Restaurace Café Kampus se specializuje na tureckou kuchyni , patří k dražším podnikům a nevpouští dovnitř děti .","Restaurace X-name se specializuje na X-food kuchyni , patří k X-price_range podnikům a nevpouští dovnitř děti ."
@@ -730,7 +730,7 @@ da,delex_da,text,delex_text
 "inform(food=Italian,name=Ferdinanda,phone=227759202)","inform(food=X-food,name=X-name,phone=X-phone)",V restauraci Ferdinanda podávají italská jídla . Telefonní číslo je 227759202 .,V restauraci X-name podávají X-food jídla . Telefonní číslo je X-phone .
 "inform(name='Green Spirit',phone=243442530)","inform(name=X-name,phone=X-phone)",Do Green Spiritu můžete zavolat na číslo 243442530 .,Do X-name můžete zavolat na číslo X-phone .
 "inform_only_match(area='Staré Město',good_for_meal=breakfast,kids_allowed=yes,name=BarBar,price_range=cheap)","inform_only_match(area=X-area,good_for_meal=X-good_for_meal,kids_allowed=yes,name=X-name,price_range=X-price_range)",Kromě BarBaru není na Starém Městě žádná restaurace vhodná pro děti s levnými snídaněmi .,Kromě X-name není na X-area žádná restaurace vhodná pro děti s X-price_range X-good_for_meal .
-"inform_only_match(area=Smíchov,kids_allowed=no,name='Pivo & Basilico')","inform_only_match(area=X-area,kids_allowed=no,name=X-name)","Pivo & Basilico je jediná restaurace poblíž Smíchova , kde je povolen vstup s dětmi .","X-name je jediná restaurace poblíž X-area , kde je povolen vstup s dětmi ."
+"inform_only_match(area=Smíchov,kids_allowed=yes,name='Pivo & Basilico')","inform_only_match(area=X-area,kids_allowed=yes,name=X-name)","Pivo & Basilico je jediná restaurace poblíž Smíchova , kde je povolen vstup s dětmi .","X-name je jediná restaurace poblíž X-area , kde je povolen vstup s dětmi ."
 ?request(food),?request(food),Jaký druh jídla si budete přát ?,Jaký druh jídla si budete přát ?
 "inform(name='Švejk Restaurant',phone=291102064)","inform(name=X-name,phone=X-phone)",Telefonní číslo do restaurace Švejk Restaurant je 291102064,Telefonní číslo do X-name Restaurant je X-phone
 "inform(area='Staré Město',name='Green Spirit',phone=286102528)","inform(area=X-area,name=X-name,phone=X-phone)",Green Spirit se nachází na Starém Městě . Jeho telefon je 286102528,X-name se nachází na X-area . Jeho telefon je X-phone
@@ -773,7 +773,7 @@ da,delex_da,text,delex_text
 ?confirm(good_for_meal=dinner),?confirm(good_for_meal=X-good_for_meal),Chcete najít vhodnou restauraci na večeři ?,Chcete najít vhodnou restauraci na X-good_for_meal ?
 "inform(name='Café Savoy',phone=261770532)","inform(name=X-name,phone=X-phone)",Restaurace Café Savoy má telefonní číslo 261770532 .,Restaurace X-name má telefonní číslo X-phone .
 ?request(food),?request(food),Kterou kuchyni byste si přáli ?,Kterou kuchyni byste si přáli ?
-"inform(food=Asian,kids_allowed=no,name='Café Kampus',price_range=expensive)","inform(food=X-food,kids_allowed=no,name=X-name,price_range=X-price_range)","Café Kampus je příjemná restaurace , která podává drahá asijská jídla a je přístupná dětem .","X-name je příjemná restaurace , která podává X-price_range X-food jídla a je přístupná dětem ."
+"inform(food=Asian,kids_allowed=yes,name='Café Kampus',price_range=expensive)","inform(food=X-food,kids_allowed=yes,name=X-name,price_range=X-price_range)","Café Kampus je příjemná restaurace , která podává drahá asijská jídla a je přístupná dětem .","X-name je příjemná restaurace , která podává X-price_range X-food jídla a je přístupná dětem ."
 "inform(food=Indian,name=Ananta,price_range=moderate)","inform(food=X-food,name=X-name,price_range=X-price_range)","Ananta je střední restaurace , kde podávají indická jídla .","X-name je X-price_range restaurace , kde podávají X-food jídla ."
 "inform(name='Café Kampus',phone=236944504)","inform(name=X-name,phone=X-phone)",Telefonní číslo Café Kampus je 236944504 .,Telefonní číslo X-name je X-phone .
 "inform(count=2,food=Mexican,type=restaurant)","inform(count=X-count,food=X-food,type=restaurant)","Mám 2 restaurace , kde podávají mexická jídla .","Mám X-count restaurace , kde podávají X-food jídla ."

@@ -150,10 +150,10 @@
         "delex_text": "Našla jsem pouze jednu X-price_range restauraci poblíž X-near , kde podávají X-food kuchyni , X-name ."
     },
     {
-        "da": "?request(area)",
-        "delex_da": "?request(area)",
+        "da": "?request(area,good_for_meal=dinner)",
+        "delex_da": "?request(area,good_for_meal=X-good_for_meal)",
         "text": "Kde byste chtěli večeřet ?",
-        "delex_text": "Kde byste chtěli večeřet ?"
+        "delex_text": "Kde byste chtěli X-good_for_meal ?"
     },
     {
         "da": "inform(kids_allowed=yes,name='Kočár z Vídně',near='Charles Bridge',price_range=expensive)",
@@ -540,10 +540,10 @@
         "delex_text": "Nedaleko od X-near je příjemná restaurace X-name , která je vhodná pro děti a dá se v ní dobře X-good_for_meal ."
     },
     {
-        "da": "?request(area)",
-        "delex_da": "?request(area)",
+        "da": "?request(area,good_for_meal=dinner)",
+        "delex_da": "?request(area,good_for_meal=X-good_for_meal)",
         "text": "V jaké lokalitě byste chtěli povečeřet ?",
-        "delex_text": "V jaké lokalitě byste chtěli povečeřet ?"
+        "delex_text": "V jaké lokalitě byste chtěli X-good_for_meal ?"
     },
     {
         "da": "?request(area)",
@@ -588,8 +588,8 @@
         "delex_text": "Podnik X-name patří do X-price_range cenové skupiny ."
     },
     {
-        "da": "inform(area=Karlín,count=4,good_for_meal=lunch,kids_allowed=yes,type=restaurant)",
-        "delex_da": "inform(area=X-area,count=X-count,good_for_meal=X-good_for_meal,kids_allowed=yes,type=restaurant)",
+        "da": "inform(area=Karlín,count=4,good_for_meal=lunch,kids_allowed=no,type=restaurant)",
+        "delex_da": "inform(area=X-area,count=X-count,good_for_meal=X-good_for_meal,kids_allowed=no,type=restaurant)",
         "text": "V Karlíně se nachází 4 restaurace , které podávají obědy a nejsou vhodné pro děti .",
         "delex_text": "V X-area se nachází X-count restaurace , které podávají X-good_for_meal a nejsou vhodné pro děti ."
     },
@@ -614,7 +614,7 @@
     {
         "da": "inform_no_match(area='Staré Město',kids_allowed=yes,price_range=expensive)",
         "delex_da": "inform_no_match(area=X-area,kids_allowed=yes,price_range=X-price_range)",
-        "text": "Bohužel se mi nepodařilo najít na Starém městě žádnou drahou restauraci vhodnou pro děti .",
+        "text": "Bohužel se mi nepodařilo najít na Starém Městě žádnou drahou restauraci vhodnou pro děti .",
         "delex_text": "Bohužel se mi nepodařilo najít na X-area žádnou X-price_range restauraci vhodnou pro děti ."
     },
     {
@@ -828,10 +828,10 @@
         "delex_text": "Číslo na X-name je X-phone . Je ve X-address na X-area ."
     },
     {
-        "da": "?request(area)",
-        "delex_da": "?request(area)",
+        "da": "?request(area,good_for_meal=dinner)",
+        "delex_da": "?request(area,good_for_meal=X-good_for_meal)",
         "text": "V jaké lokalitě byste chtěli povečeřet ?",
-        "delex_text": "V jaké lokalitě byste chtěli povečeřet ?"
+        "delex_text": "V jaké lokalitě byste chtěli X-good_for_meal ?"
     },
     {
         "da": "inform(name='Green Spirit',near='Wenceslas Square')",
@@ -1038,8 +1038,8 @@
         "delex_text": "X-name spadá do X-price_range cenové kategorie ."
     },
     {
-        "da": "inform_only_match(food=Asian,name='U Tučňáků',price_range=expensive)",
-        "delex_da": "inform_only_match(food=X-food,name=X-name,price_range=X-price_range)",
+        "da": "inform_only_match(food=Asian,name='U Tučňáků',price_range=expensive,kids_allowed=yes)",
+        "delex_da": "inform_only_match(food=X-food,name=X-name,price_range=X-price_range,kids_allowed=yes)",
         "text": "Našla jsem pouze U Tučňáků jako luxusní asijskou a dětem přístupnou restauraci .",
         "delex_text": "Našla jsem pouze X-name jako X-price_range X-food a dětem přístupnou restauraci ."
     },
@@ -1434,8 +1434,8 @@
         "delex_text": "X-name je hezká restaurace v X-area s X-price_range cenami ."
     },
     {
-        "da": "inform(kids_allowed=yes,name='Café Savoy',near='TV Tower',price_range=expensive)",
-        "delex_da": "inform(kids_allowed=yes,name=X-name,near=X-near,price_range=X-price_range)",
+        "da": "inform(name='Café Savoy',near='TV Tower',price_range=expensive)",
+        "delex_da": "inform(name=X-name,near=X-near,price_range=X-price_range)",
         "text": "Kavárna Savoy je dražší podnik poblíž Žižkovské televizní věže .",
         "delex_text": "X-name je X-price_range podnik poblíž X-near ."
     },
@@ -2190,8 +2190,8 @@
         "delex_text": "Kterou městskou část hledáte ?"
     },
     {
-        "da": "inform(count=218,food=American,kids_allowed=no,price_range=cheap,type=restaurant)",
-        "delex_da": "inform(count=X-count,food=X-food,kids_allowed=no,price_range=X-price_range,type=restaurant)",
+        "da": "inform(count=218,food=American,kids_allowed=yes,price_range=cheap,type=restaurant)",
+        "delex_da": "inform(count=X-count,food=X-food,kids_allowed=yes,price_range=X-price_range,type=restaurant)",
         "text": "Našla jsem 218 amerických restaurací s levnými cenami , které jsou vhodné pro děti .",
         "delex_text": "Našla jsem X-count X-food restaurací s X-price_range cenami , které jsou vhodné pro děti ."
     },
@@ -3546,10 +3546,10 @@
         "delex_text": "V X-name si můžete dát velmi dobrý X-good_for_meal ."
     },
     {
-        "da": "?request(area)",
-        "delex_da": "?request(area)",
+        "da": "?request(area,good_for_meal=dinner)",
+        "delex_da": "?request(area,good_for_meal=X-good_for_meal)",
         "text": "V jaké oblasti si chcete dát večeři ?",
-        "delex_text": "V jaké oblasti si chcete dát večeři ?"
+        "delex_text": "V jaké oblasti si chcete dát X-good_for_meal ?"
     },
     {
         "da": "inform(name='Café Kampus',near='Charles Bridge')",
@@ -3822,8 +3822,8 @@
         "delex_text": "X-name je příjemná restaurace , která nabízí X-food jídla a není vhodná pro děti ."
     },
     {
-        "da": "inform(kids_allowed=yes,name=Místo,near='Prague Castle',price_range=moderate)",
-        "delex_da": "inform(kids_allowed=yes,name=X-name,near=X-near,price_range=X-price_range)",
+        "da": "inform(name=Místo,near='Prague Castle',price_range=moderate)",
+        "delex_da": "inform(name=X-name,near=X-near,price_range=X-price_range)",
         "text": "Místo je středně drahý podnik poblíž Pražského hradu .",
         "delex_text": "X-name je X-price_range podnik poblíž X-near ."
     },
@@ -3936,8 +3936,8 @@
         "delex_text": "X-name se nachází na X-area na adrese X-address . Telefonní číslo je X-phone"
     },
     {
-        "da": "inform(count=2,food=Chinese,kids_allowed=no,price_range=moderate,type=restaurant)",
-        "delex_da": "inform(count=X-count,food=X-food,kids_allowed=no,price_range=X-price_range,type=restaurant)",
+        "da": "inform(count=2,food=Chinese,kids_allowed=yes,price_range=moderate,type=restaurant)",
+        "delex_da": "inform(count=X-count,food=X-food,kids_allowed=yes,price_range=X-price_range,type=restaurant)",
         "text": "Našla jsem 2 čínské restaurace se středními cenami , které jsou vhodné pro děti .",
         "delex_text": "Našla jsem X-count X-food restaurace se X-price_range cenami , které jsou vhodné pro děti ."
     },
@@ -4068,8 +4068,8 @@
         "delex_text": "Mohu se vás zeptat na oblast ?"
     },
     {
-        "da": "inform(kids_allowed=no,name=Ferdinanda)",
-        "delex_da": "inform(kids_allowed=no,name=X-name)",
+        "da": "inform(kids_allowed=yes,name=Ferdinanda)",
+        "delex_da": "inform(kids_allowed=yes,name=X-name)",
         "text": "Mám tu příjemnou restauraci Ferdinanda a děti jsou zde vítány .",
         "delex_text": "Mám tu příjemnou restauraci X-name a děti jsou zde vítány ."
     },
@@ -4452,10 +4452,10 @@
         "delex_text": "Chcete restauraci , kam mohou i děti , že ?"
     },
     {
-        "da": "inform(name='Pivo & Basilico',price_range=expensive)",
-        "delex_da": "inform(name=X-name,price_range=X-price_range)",
+        "da": "inform(name='Pivo & Basilico',food=Chinese,price_range=expensive)",
+        "delex_da": "inform(name=X-name,food=X-food,price_range=X-price_range)",
         "text": "Mám tu čínskou restauraci Pivo & Basilico , patří do drahé cenové kategorie .",
-        "delex_text": "Mám tu čínskou restauraci X-name , patří do X-price_range cenové kategorie ."
+        "delex_text": "Mám tu X-food restauraci X-name , patří do X-price_range cenové kategorie ."
     },
     {
         "da": "inform(name='U Konšelů',near='TV Tower')",
@@ -4508,7 +4508,7 @@
     {
         "da": "inform(area='Staré Město',name='Green Spirit',price_range=moderate)",
         "delex_da": "inform(area=X-area,name=X-name,price_range=X-price_range)",
-        "text": "Na Starém městě máme Green Spirit s běžnými cenami",
+        "text": "Na Starém Městě máme Green Spirit s běžnými cenami",
         "delex_text": "Na X-area máme X-name s X-price_range cenami"
     },
     {
@@ -4602,10 +4602,10 @@
         "delex_text": "X-name je restaurace se X-price_range cenami ."
     },
     {
-        "da": "?request(area)",
-        "delex_da": "?request(area)",
+        "da": "?request(area,good_for_meal=dinner)",
+        "delex_da": "?request(area,good_for_meal=X-good_for_meal)",
         "text": "Kde byste chtěli večeřet ?",
-        "delex_text": "Kde byste chtěli večeřet ?"
+        "delex_text": "Kde byste chtěli X-good_for_meal ?"
     },
     {
         "da": "inform(kids_allowed=no,name='Baráčnická rychta')",
